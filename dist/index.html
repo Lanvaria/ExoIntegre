@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeconf 2025</title>
+    <link rel="stylesheet" href="/dist/style/style.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="top">
+        <a href="#" class="logo"> <span class="purple">Codeconf</span><br />2025 </a>
+        <nav class="nav">
+          <a href="">Event</a>
+          <a href="">Speakers</a>
+          <a href="">Team</a>
+          <a href="">Contact</a>
+          <a href="">Schedule <i class="fa-solid fa-magnifying-glass"></i></a>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="stripes">
+        <div class="banner">
+          <img class="banner__image" src="image/page-picture/presents@3x.png" alt="" />
+          <div class="text__banner">
+            <h1>Speaker Edition 2025</h1>
+            <p>Discover the speakers and the topics or suggest your own topic for our next event</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="person_list_container">
+        <nav class="breadcrumb">
+          <a href="#"><i class="fas fa-home"></i></a>
+          <span> | </span>
+          <a href="#">Speakers</a>
+        </nav>
+
+        <div class="person_list">
+          <div class="person">
+            <picture>
+              <img src="image/orators/chris@3x.jpg" alt="Chris" />
+            </picture>
+            <h3>Chris <span>Coyier</span></h3>
+            <p>Milwaukee, WI</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/eric@3x.jpg" alt="Eric" />
+            </picture>
+            <h3>Eric <span>Meyer</span></h3>
+            <p>Cleveland, OH</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/lea@3x.jpg" alt="Lea" />
+            </picture>
+            <h3>Lea <span>Verou</span></h3>
+            <p>Cambridge, MA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/luke@3x.jpg" alt="Luke" />
+            </picture>
+            <h3>Luke <span>Wroblewski</span></h3>
+            <p>San Francisco, CA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/nico@3x.jpg" alt="Nicolas" />
+            </picture>
+            <h3>Nicolas <span>Gallagher</span></h3>
+            <p>San Francisco, CA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/nicole@3x.jpg" alt="Nicole" />
+            </picture>
+            <h3>Nicole <span>Sullivan</span></h3>
+            <p>San Francisco, CA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/paul@3x.jpg" alt="Paul" />
+            </picture>
+            <h3>Paul <span>Irish</span></h3>
+            <p>Palo Alto, CA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/rachel@3x.jpg" alt="Rachel" />
+            </picture>
+            <h3>Rachel <span>Andrew</span></h3>
+            <p>Bristol, UK</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/sara@3x.jpg" alt="Sara" />
+            </picture>
+            <h3>Sara <span>Soueidan</span></h3>
+            <p>Lebanon</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/shirley@3x.jpg" alt="Shirley" />
+            </picture>
+            <h3>Shirley <span>Wu</span></h3>
+            <p>San Francisco, CA</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/stephen@3x.jpg" alt="Stephen" />
+            </picture>
+            <h3>Stephen <span>Hay</span></h3>
+            <p>Leeuwarden, NL</p>
+          </div>
+
+          <div class="person">
+            <picture>
+              <img src="image/orators/brad@3x.jpg" alt="Brad" />
+            </picture>
+            <h3>Brad <span>Frost</span></h3>
+            <p>Pittsburgh, PA</p>
+          </div>
+
+          <div class="carte">
+            <h3>Brad Frost</h3>
+            <p>Atomic Design We can construct design systems in a more methodical way</p>
+            <div class="bottom-info">
+                <span>02:00 PM R2</span>
+                <button class="about-btn">About</button>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="formulaire">
+        <h1>Become a Speaker</h1>
+        <p>Do you have a topic that you would like to present? Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords.</p>
+
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject*</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="detail">Short Detail*</label>
+          <textarea id="detail" name="detail" rows="4" required></textarea>
+
+          <label for="keywords">Keywords</label>
+          <input type="text" id="keywords" name="keywords" />
+
+          <label for="link">Link (Optional)</label>
+          <input type="url" id="link" name="link" />
+
+          <button type="submit">Send Your Subject</button>
+        </form>
+
+        <p>
+          Or just participate in the
+          <a href="current_event.html">present event</a>.
+        </p>
+        <button>Get ticket</button>
+      </section>
+    </main>
+
+    <footer class="main_footer">
+      <div class="main_footer__infos">
+        <div>
+          <h3>The Las Vegas Convention Center</h3>
+          <p>3150 Paradise Rd, Las Vegas, NV 89109</p>
+          <p>The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses approximately 3.2 million square feet with exhibit space of 2 million square feet and meeting space of nearly 250,000 square feet.</p>
+        </div>
+        <img src="image/page-picture/lasvegas_conventioncenter.png" alt="" class="main_footer__image" />
+      </div>
+
+      <section class="sponsors">
+        <div class="sponsor amazon">
+          <img src="image/logos_assets_codeconf/amazon_s3.svg" alt="Sponsor Logo amazon" />
+        </div>
+
+        <div class="sponsor cisco">
+          <img src="image/logos_assets_codeconf/cisco.svg" alt="Sponsor Logo cisco" />
+        </div>
+
+        <div class="sponsor mailchimp">
+          <img src="image/logos_assets_codeconf/mailchimp.svg" alt="Sponsor Logo mailchimp" />
+        </div>
+
+        <div class="sponsor meetup">
+          <img src="image/logos_assets_codeconf/meetup.svg" alt="Sponsor Logo meetup" />
+        </div>
+
+        <div class="sponsor nick">
+          <img src="image/logos_assets_codeconf/nick.svg" alt="Sponsor Logo nick" />
+        </div>
+
+        <div class="sponsor stripe">
+          <img src="image/logos_assets_codeconf/stripe.svg" alt="Sponsor Logo stripe" />
+        </div>
+      </section>
+
+      <section class="bottom">
+        <div class="networks">
+          <p>Follow us</p>
+          <div class="network">
+            <a href="https://x.com/codeconf2023" target="_blank">
+              <img src="/image/logos_assets_codeconf/x-twitter-logo-png.png" alt="X" />
+              @codeconf2023
+            </a>
+          </div>
+
+          <div class="network">
+            <a href="https://join.slack.com/t/codeconf2023/shared_invite" target="_blank">
+              <img src="/image/logos_assets_codeconf/pngwing.com.png" alt="Slack" />
+              #codeconf2023
+            </a>
+          </div>
+        </div>
+
+        <div class="call_center">
+          <p>Helpdesk Call-center</p>
+          <a href="+1 702 892 0711"> +1 702 892 0711</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

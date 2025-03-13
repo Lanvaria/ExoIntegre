@@ -1,0 +1,194 @@
+.stripes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .stripes_left,
+  .stripes_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid green;
+    margin-top: -21rem;
+    position: absolute;
+    z-index: -1;
+  }
+
+}
+.banner {
+  //border: 5px solid rgb(38, 190, 81);
+  align-items: center;
+  width: 100%;
+  background-color: rgb(61, 38, 197);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &::before,  &::after {
+    content: "";
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    background: url("../image/elts/pattern-stripes-left.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    inset-inline-start: 0;
+    inset-block-start: -0.5rem;
+  }
+  &::after {
+    width: 10rem;
+    content: "";
+    background: url("../image/elts/pattern-stripes-right.png");
+    inset-inline: auto 0;
+    background-position: top right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  &__image {
+    width: 30%;
+    margin-top: -10rem;
+    align-self: end;
+  }
+  &__text {
+    //border: 5px solid rgb(38, 190, 81);
+    font-size: 1.3rem;
+    flex-direction: column; 
+    color: white;
+    text-align: left;
+    width: clamp(10rem, 40vw, 40rem);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: aliceblue;
+}
+
+
+// Liste personnes
+
+.person_list {
+  //border: 3px solid;
+  display: grid;
+  //justify-self: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4);
+  gap: 1rem;
+  width: 100vw;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // 2 colonnes sur tablette
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // 1 colonne sur mobile
+  }
+}
+
+.person {
+  //border: 1px solid rgb(214, 224, 16);
+  font-size: 1.2rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: 3;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("/dist/image/elts/pattern_stripes.png") no-repeat;
+    background-size: contain;
+    transform: translateY(133px);
+  }
+}
+
+span {
+  display: block;
+}
+
+
+h3 {
+  line-height: 1.5rem;
+  margin: 0.7rem;
+  color: rgb(128, 53, 182);
+  font-family: "museo";
+  font-weight: 300;
+}
+
+p {
+  line-height: 0.6rem;
+  margin: 0.8rem;
+  font-size: 1rem;
+  color: rgb(158, 158, 158);
+}
+
+.person_list_container {
+  font-family: "maven";
+}
+
+.breadcrumb {
+  margin: 2rem;
+}
+
+
+
+// Carte
+
+.carte {
+  background-color: #6a6a6a;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  position: relative;
+
+  h3 {
+      margin: 0;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 1.2rem;
+  }
+
+  p {
+      color: white;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+  }
+
+  .bottom-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+  }
+
+  .about-btn {
+      background-color: blue;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .about-btn:hover {
+      background-color: darkblue;
+  }
+}
+
+
+
+

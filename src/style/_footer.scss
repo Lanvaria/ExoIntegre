@@ -1,0 +1,68 @@
+.main_footer {
+  background-color: #343237; // Gris foncé
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__infos {
+    display: grid;
+    max-width: 1100px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: white;
+    gap: 2rem;
+    div {
+        flex-basis: 50%;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 8rem;
+    }
+    p {
+        font-size: 1rem;
+      }
+    
+      h3 {
+        color: #00C0c1;
+        font-size: 1.2rem;
+      }
+
+  }
+}
+
+
+
+
+
+.sponsors {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  background-color: #343237;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.sponsor {
+  margin-inline: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.networks {
+  text-align: left;
+}
+
+.call_center {
+  text-align: right;
+}

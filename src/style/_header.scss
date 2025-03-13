@@ -1,0 +1,51 @@
+// ============================
+//        HEADER
+// ============================
+
+.header {
+  z-index: 0;
+  padding: 2.5rem 2rem;
+  font-family: "maven";
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: "League Spartan";
+    font-size: 3rem;
+    margin-right: auto;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+  }
+
+  .purple {
+    color: rgb(130, 92, 206);
+  }
+
+  .nav {
+    font-size: 1.1rem;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+
+  & + a::before {
+    content: " | ";
+    margin: 0 1rem;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.fa-solid {
+  padding-inline: 1rem;
+  color: orange;
+}

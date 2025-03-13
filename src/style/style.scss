@@ -1,0 +1,21 @@
+//
+@import "normalize";
+@import "webfonts";
+@import "variable";
+//structure
+@import "layout";
+@import "header";
+@import "footer";
+//components
+@import "teaser";
+@import "speaker";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
