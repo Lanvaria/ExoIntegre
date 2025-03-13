@@ -7,13 +7,14 @@ section.formulaire {
 }
 
 .formulaire__title {
+  font-family: "maven";
   color: #5d2be7;
   font-size: 1.6rem;
   //border: 2px solid red;
 }
 
 .formulaire__text {
-  
+  font-family: "maven";
   font-size: 1.1rem;
   margin: 2rem;
   //border: 2px solid red;
@@ -22,6 +23,7 @@ section.formulaire {
 
 /* Style du formulaire */
 form {
+  font-family: "maven";
   display: flex;
   flex-direction: column;
   align-items: center;

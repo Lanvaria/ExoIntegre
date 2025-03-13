@@ -501,6 +501,7 @@ h3 {
 }
 
 .breadcrumb {
+  gap: 0.4rem;
   margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,35 +521,11 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 200px;
   position: relative;
-}
-.carte h3 {
-  margin: 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 1.2rem;
-}
-.carte p {
-  color: white;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
 }
 .carte .bottom-info {
   display: -webkit-box;
@@ -557,9 +534,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   position: absolute;
   bottom: 10px;
@@ -587,17 +561,20 @@ section.formulaire {
 }
 
 .formulaire__title {
+  font-family: "maven";
   color: #5d2be7;
   font-size: 1.6rem;
 }
 
 .formulaire__text {
+  font-family: "maven";
   font-size: 1.1rem;
   margin: 2rem;
 }
 
 /* Style du formulaire */
 form {
+  font-family: "maven";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -124,6 +124,7 @@ h3 {
 }
 
 .breadcrumb {
+  gap: 0.4rem;
   margin: 2rem;
   display: flex;
 }
@@ -140,32 +141,14 @@ h3 {
   width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   height: 200px;
   position: relative;
 
-  h3 {
-      margin: 0;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 1.2rem;
-  }
-
-  p {
-      color: white;
-      text-align: center;
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 10px;
-  }
 
   .bottom-info {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       width: 100%;
       position: absolute;
       bottom: 10px;
