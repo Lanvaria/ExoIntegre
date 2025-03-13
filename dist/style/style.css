@@ -207,17 +207,17 @@ img {
 }
 
 .nav {
-  display: none; /* Cacher le menu sur mobile */
+  display: none;
 }
 
 @media screen and (min-width: 769px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; /* Afficher la nav sur desktop */
+    display: flex;
   }
   .burger {
-    display: none; /* Cacher le burger sur desktop */
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -641,7 +641,6 @@ textarea {
           box-sizing: border-box;
 }
 
-/* Style du bouton "Send Your Subject" */
 button[type=submit] {
   background-color: orange;
   color: white;

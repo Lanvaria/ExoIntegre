@@ -42,8 +42,6 @@
   color: orange;
 }
 
-
-  // Style pour le menu dans sa version desktop
   .nav {
     font-size: 1.1rem;
     display: flex;
@@ -53,24 +51,22 @@
     text-decoration: none;
   }
 
-  // Cacher le menu burger en version desktop
+  
   .burger {
     display: none;
   }
 
-  // Cacher le menu mobile par défaut
   .nav {
-    display: none; /* Cacher le menu sur mobile */
+    display: none;
   }
 
-  // Cacher le menu burger et afficher le menu classique pour desktop
   @media screen and (min-width: 769px) {
     .nav {
-      display: flex; /* Afficher la nav sur desktop */
+      display: flex; 
     }
 
     .burger {
-      display: none; /* Cacher le burger sur desktop */
+      display: none; 
     }
   }
 
