@@ -439,11 +439,6 @@ img {
   width: clamp(10rem, 40vw, 40rem);
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: aliceblue;
-}
-
 .person_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -492,7 +487,7 @@ h3 {
   font-weight: 300;
 }
 
-p {
+.person__text {
   line-height: 0.6rem;
   margin: 0.8rem;
   font-size: 1rem;
@@ -590,11 +585,13 @@ section.formulaire {
 }
 
 .formulaire__title {
-  border: 2px solid red;
+  color: #5d2be7;
+  font-size: 1.6rem;
 }
 
 .formulaire__text {
-  border: 2px solid red;
+  font-size: 1.1rem;
+  margin: 2rem;
 }
 
 /* Style du formulaire */
@@ -654,15 +651,6 @@ button[type=submit] {
 
 button[type=submit]:hover {
   background-color: #e07b00;
-}
-
-p a {
-  color: #7f00ff; /* Mauve */
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
 }
 
 /* Style pour le bouton "Get ticket" */
