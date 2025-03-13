@@ -473,8 +473,6 @@ img {
   bottom: 0;
   background: url("/dist/image/elts/pattern_stripes.png") no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(133px);
-          transform: translateY(133px);
 }
 
 span {
