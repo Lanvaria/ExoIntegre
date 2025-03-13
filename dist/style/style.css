@@ -460,6 +460,7 @@ img {
 }
 
 .person {
+  border: 1px solid rgb(82, 33, 11);
   font-size: 1.2rem;
   position: relative;
 }
@@ -566,7 +567,7 @@ section.formulaire {
 
 .formulaire__text {
   font-family: "maven";
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 2rem;
 }
 
