@@ -42,48 +42,78 @@
   color: orange;
 }
 
+
+  // Style pour le menu dans sa version desktop
+  .nav {
+    font-size: 1.1rem;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  // Cacher le menu burger en version desktop
   .burger {
     display: none;
   }
 
-  // Cacher le menu sur mobile
+  // Cacher le menu mobile par défaut
+  .nav {
+    display: none; /* Cacher le menu sur mobile */
+  }
+
+  // Cacher le menu burger et afficher le menu classique pour desktop
+  @media screen and (min-width: 769px) {
+    .nav {
+      display: flex; /* Afficher la nav sur desktop */
+    }
+
+    .burger {
+      display: none; /* Cacher le burger sur desktop */
+    }
+  }
+
+  // Version mobile : menu burger
   @media screen and (max-width: 768px) {
     .nav {
-      display: none; // Cacher le menu par défaut sur mobile
-      flex-direction: column;
-      width: 100%;
-      background-color: white;
+      font-size: 1.1rem;
+      display: block;
       position: absolute;
-      top: 100%;
-      left: 0;
+      top: 0;
+      right: 0;
+      background-color: white;
+      width: 200px; /* Largeur du menu */
+      height: 100vh; /* Le menu occupe toute la hauteur */
       padding: 2rem 1rem;
       gap: 15px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-      z-index: 100;
+      transform: translateX(100%); /* Cache le menu à droite par défaut */
+      visibility: hidden; /* Le menu est invisible */
     }
 
     .nav.open {
-      display: flex; 
+      transform: translateX(0); /* Le menu glisse de la droite vers la gauche */
+      visibility: visible; /* Rendre le menu visible */
     }
 
-    // Le burger (icône)
     .burger {
-      display: block;
+      display: block; /* Afficher le burger sur mobile */
       cursor: pointer;
       width: 30px;
       height: 25px;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: 5rem;
-      z-index: 1;
+      gap: 5px;
+      z-index: 10;
+    }
 
-      .line {
-        width: 100%;
-        height: 4px;
-        background-color: black;
-        transition: transform 0.3s ease;
-      }
+    .burger .line {
+      width: 100%;
+      height: 4px;
+      background-color: black;
+      transition: transform 0.3s ease;
     }
 
     .burger.open .line:nth-child(1) {

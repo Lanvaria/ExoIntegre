@@ -1,3 +1,4 @@
+@charset "UTF-8";
 img {
   width: 100%;
 }
@@ -187,35 +188,63 @@ img {
   color: orange;
 }
 
+.nav {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
 .burger {
   display: none;
 }
 
+.nav {
+  display: none; /* Cacher le menu sur mobile */
+}
+
+@media screen and (min-width: 769px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Afficher la nav sur desktop */
+  }
+  .burger {
+    display: none; /* Cacher le burger sur desktop */
+  }
+}
 @media screen and (max-width: 768px) {
   .nav {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    background-color: white;
+    font-size: 1.1rem;
+    display: block;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 200px; /* Largeur du menu */
+    height: 100vh; /* Le menu occupe toute la hauteur */
     padding: 2rem 1rem;
     gap: 15px;
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); /* Cache le menu à droite par défaut */
+    visibility: hidden; /* Le menu est invisible */
   }
   .nav.open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); /* Le menu glisse de la droite vers la gauche */
+    visibility: visible; /* Rendre le menu visible */
   }
   .burger {
-    display: block;
+    display: block; /* Afficher le burger sur mobile */
     cursor: pointer;
     width: 30px;
     height: 25px;
@@ -229,8 +258,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 5rem;
-    z-index: 1;
+    gap: 5px;
+    z-index: 10;
   }
   .burger .line {
     width: 100%;
@@ -441,8 +470,8 @@ h1 {
 .person::after {
   content: "";
   z-index: 3;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   right: 0;
   bottom: 0;
