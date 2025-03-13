@@ -667,34 +667,36 @@ p a:hover {
 
 /* Style pour le bouton "Get ticket" */
 button[type=button] {
-  background-color: orange;
+  background-color: rgb(255, 106, 0);
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 1.1rem;
-  border-radius: 5px;
+  font-size: 1.5rem;
+  border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
 }
 
 button[type=button]:hover {
-  background-color: #e07b00; /* Légèrement plus foncé au survol */
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 106, 0);
+  border: 1px solid rgb(255, 106, 0);
 }
 
 /* Style du bouton "Send Your Subject" avec border orange et texte orange */
 button[type=submit] {
   background-color: white;
-  color: orange;
-  border: 2px solid orange;
+  color: rgb(255, 106, 0);
+  border: 2px solid rgb(255, 106, 0);
   padding: 10px 20px;
-  font-size: 1.1rem;
-  border-radius: 5px;
+  font-size: 1.3rem;
+  border-radius: 20px;
   cursor: pointer;
   margin-top: 20px;
 }
 
 button[type=submit]:hover {
-  background-color: orange;
+  background-color: rgb(255, 106, 0);
   color: white;
 }
 
