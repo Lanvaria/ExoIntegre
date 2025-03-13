@@ -46,9 +46,11 @@
     margin-top: -10rem;
     align-self: end;
   }
-  &__text {
+  &__title {
     //border: 5px solid rgb(38, 190, 81);
-    font-size: 1.3rem;
+    font-family: "museo";
+    font-weight: 500;
+    font-size: 1.6rem;
     flex-direction: column; 
     color: white;
     text-align: left;
