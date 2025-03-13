@@ -69,7 +69,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4);
   gap: 1rem;
-  width: 100vw;
+  width: 100vw;  
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr); // 2 colonnes sur tablette
@@ -128,46 +128,6 @@ h3 {
   display: flex;
 }
 
-
-
-// Carte
-
-.carte {
-  background-color: #6a6a6a;
-  color: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: 200px;
-  position: relative;
-
-
-  .bottom-info {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
-  }
-
-  .about-btn {
-      background-color: blue;
-      color: rgb(255, 255, 255);
-      border: none;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
-  }
-
-  .about-btn:hover {
-      background-color: darkblue;
-  }
-}
 
 
 
