@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 2px solid green;
-    margin-top: -21rem;
     position: absolute;
     z-index: -1;
   }
@@ -128,6 +127,7 @@ p {
 
 .breadcrumb {
   margin: 2rem;
+  display: flex;
 }
 
 
