@@ -16,20 +16,31 @@ section.formulaire {
 .formulaire__text {
   text-align: center;
   font-family: "maven";
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 2rem;
   //border: 2px solid red;
 }
 
-
 form {
+  //border: 2px solid blue;
+  max-width: 800px;
   font-family: "maven";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-bottom: 30px;
-}
+  margin: 0 auto;
+  gap: 1.2rem;
 
+  textarea[id="detail"] {
+    border: 1px solid #ccc;
+    //border: 3px solid rgb(55, 155, 25);
+    width: 100%;
+  }
+}
+.send {
+  width: 100%;
+  grid-column: span 2;
+  //border: 6px solid #000;
+}
 
 label {
   font-size: 1rem;
@@ -37,18 +48,16 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="url"],
-textarea {
+input[type="url"] {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   padding: 15px;
   margin-bottom: 15px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: none;
   box-sizing: border-box;
+  border-bottom: 2px solid #5d2be7;
 }
-
 
 button[type="submit"] {
   width: auto;
@@ -60,22 +69,27 @@ button[type="submit"] {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 button[type="submit"]:hover {
-  background-color: #e07b00; 
+  background-color: #e07b00;
 }
 
 /* Style pour le bouton "Get ticket" */
 button[type="button"] {
-  background-color: rgb(255, 106, 0);
+  margin: auto;
+  padding: 1.4rem;
   color: white;
-  border: none;
-  padding: 10px 20px;
   font-size: 1.5rem;
-  border-radius: 50px;
+  border-radius: 3rem;
+  border: 1px solid orange;
+  background-color: #ff8c00;
   cursor: pointer;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 15px #784609;
 }
 
 button[type="button"]:hover {
@@ -106,11 +120,9 @@ button[type="submit"]:hover {
   section.formulaire {
     width: 95%;
   }
-  
 
   /* Réduire la taille du titre */
   h1 {
     font-size: 2rem;
   }
-  
 }

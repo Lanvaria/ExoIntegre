@@ -283,6 +283,7 @@ img {
   }
 }
 .main_footer {
+  font-family: "maven";
   background-color: #343237;
   padding: 2rem;
   display: -webkit-box;
@@ -295,6 +296,31 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0;
+}
+.main_footer__text {
+  display: grid;
+  align-self: stretch;
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+.main_footer__text h3, .main_footer__text p {
+  margin: 0;
+  line-height: 1.5;
+}
+.main_footer__text h3 {
+  font-size: 1.8rem;
+}
+.main_footer__text p:nth-child(2) {
+  font-weight: bold;
+  line-height: 3rem;
+}
+.main_footer__text p:nth-child(3) {
+  margin-top: auto;
+  font-size: 1.3rem;
 }
 .main_footer__infos {
   display: grid;
@@ -314,14 +340,7 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 8rem;
-}
-.main_footer__infos p {
-  font-size: 1rem;
-}
-.main_footer__infos h3 {
-  color: #00C0c1;
-  font-size: 1.2rem;
+  height: 15.2rem;
 }
 
 .sponsors {
@@ -361,7 +380,6 @@ img {
 }
 
 .network {
-  border: 1px solid rgb(43, 40, 40);
   margin: 1rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -369,16 +387,33 @@ img {
 }
 
 .networks {
+  font-family: "maven";
   text-align: left;
-  border: 1px solid rgb(43, 40, 40);
+  border: 1px solid rgb(255, 255, 255);
   color: #00C0c1;
+  width: 50%;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 .call_center {
-  text-align: right;
-  color: #00C0c1;
+  margin-top: 3rem;
+  font-family: "maven";
+  text-align: center;
+  color: #ffffff;
 }
 
+.organised {
+  font-family: "maven";
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main_footer__infos img {
+    display: none;
+  }
+}
 .stripes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,16 +570,26 @@ section.formulaire {
 .formulaire__text {
   text-align: center;
   font-family: "maven";
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 2rem;
 }
 
 form {
+  max-width: 800px;
   font-family: "maven";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  gap: 1.2rem;
+}
+form textarea[id=detail] {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.send {
+  width: 100%;
+  grid-column: span 2;
 }
 
 label {
@@ -553,17 +598,16 @@ label {
 
 input[type=text],
 input[type=email],
-input[type=url],
-textarea {
+input[type=url] {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   padding: 15px;
   margin-bottom: 15px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-bottom: 2px solid #5d2be7;
 }
 
 button[type=submit] {
@@ -576,6 +620,12 @@ button[type=submit] {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 button[type=submit]:hover {
@@ -584,14 +634,22 @@ button[type=submit]:hover {
 
 /* Style pour le bouton "Get ticket" */
 button[type=button] {
-  background-color: rgb(255, 106, 0);
+  margin: auto;
+  padding: 1.4rem;
   color: white;
-  border: none;
-  padding: 10px 20px;
   font-size: 1.5rem;
-  border-radius: 50px;
+  border-radius: 3rem;
+  border: 1px solid orange;
+  background-color: #ff8c00;
   cursor: pointer;
-  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 2px 2px 15px #784609;
+          box-shadow: 2px 2px 15px #784609;
 }
 
 button[type=button]:hover {
