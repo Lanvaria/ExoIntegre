@@ -371,10 +371,12 @@ img {
 .networks {
   text-align: left;
   border: 1px solid rgb(43, 40, 40);
+  color: #00C0c1;
 }
 
 .call_center {
   text-align: right;
+  color: #00C0c1;
 }
 
 .stripes {
@@ -521,46 +523,34 @@ section.formulaire {
   max-width: 900px;
   margin: 50px auto;
   padding: 20px;
-  text-align: center;
 }
 
 .formulaire__title {
+  text-align: center;
   font-family: "maven";
   color: #5d2be7;
   font-size: 1.6rem;
 }
 
 .formulaire__text {
+  text-align: center;
   font-family: "maven";
   font-size: 1.3rem;
   margin: 2rem;
 }
 
-/* Style du formulaire */
 form {
   font-family: "maven";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 15px;
   margin-bottom: 30px;
 }
 
-/* Style des labels */
 label {
   font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-align: left;
-  width: 80%;
-  max-width: 500px;
-  margin-left: 10%;
-  text-align: left;
 }
 
-/* Style des champs de texte */
 input[type=text],
 input[type=email],
 input[type=url],
@@ -577,12 +567,13 @@ textarea {
 }
 
 button[type=submit] {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: orange;
   color: white;
-  border: none;
-  padding: 10px 20px;
   font-size: 1.1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
 }

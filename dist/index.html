@@ -155,41 +155,48 @@
         </div>
       </section>
 
-     <section class="formulaire">
-      <div class="formulaire__title">
-        <h1>Become a Speaker</h1>
-      </div>
-      <div class="formulaire__text">  
-      <p><span> Do you have a topic that you would like to present?</span> Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords.</p>
-    </div>
-
+      <section class="formulaire">
+        <div class="formulaire__title">
+          <h1>Become a Speaker</h1>
+        </div>
+        <div class="formulaire__text">  
+          <p><span> Do you have a topic that you would like to present?</span> Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords.</p>
+        </div>
+      
         <form action="submit_form.php" method="POST">
-          <label for="name">Name*</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email*</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="subject">Subject*</label>
-          <input type="text" id="subject" name="subject" required />
-
-          <label for="detail">Short Detail*</label>
-          <textarea id="detail" name="detail" rows="4" required></textarea>
-
-          <label for="keywords">Keywords</label>
-          <input type="text" id="keywords" name="keywords" />
-
-          <label for="link">Link (Optional)</label>
-          <input type="url" id="link" name="link" />
-
-          <button type="submit">Send Your Subject</button>
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+      
+          <div class="form-group">
+            <label for="subject">Subject*</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="keywords">Keywords</label>
+            <input type="text" id="keywords" name="keywords" />
+          </div>
+      
+          <div class="form-group">
+            <label for="detail">Short Detail*</label>
+            <textarea id="detail" name="detail" rows="4" required></textarea>
+          </div>
         </form>
-      <div class="formulaire__text">
-        <p>
-          Or just participate in the
-          <a href="current_event.html">present event</a>.
-        </p>
-      </div>
+        <div>
+        <button type="submit">Send Your Subject</button>
+        </div>
+        
+        <div class="formulaire__text">
+          <p>
+            Or just participate in the
+            <a href="current_event.html">present event</a>.
+          </p>
+        </div>
         <button type="button">Get ticket</button>
       </section>
     </main>
